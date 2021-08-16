@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Success Is No Accident</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index.html" class="logo"><strong>Crystal Huang</strong> Data Scientist</a>
+									<ul class="icons">
+										<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+										<li><a href="https://www.linkedin.com/in/crystal-huang-ds/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/crystal-ctrl" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="https://crystaldatasy.medium.com/" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+										<li><a href="../download/_Crystal_Huang_CV.pdf" download class="button icon solid fa-download">Resume</a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<div class="row gtr-200">
+										<div class="col-6 col-12-medium">
+									
+											<header class="main">
+												<h1>Success Is No Accident</h1>
+												<p>Kickstarter Campaign Success Prediction with ML Classification Algorithms</p>
+											</header>
+										</div>
+										<div class="col-6 col-12-medium">
+											<span class="image"><img src="../images/kickstarter.jpeg" alt="" width=500/></span>
+										</div>
+									</div>
+								
+									<hr class="major" />								
+									<!--Text stuff-->
+									<p>The goal of this project is to <strong>predict the success of a Kickstarter campaign</strong>. 
+										The datasets used in this project came from Web Robots website from January through April 2021. 
+										I used various classification algorithms such as <strong>KNN, Logistic Regression, Decision Tree, Random Forest, Naive Bayes, and XGBoost</strong>. 
+										My final classification model was <strong>XGBoost</strong> that has a <strong>F1 score of 0.80 and AUC score of 0.82</strong>. 
+										The Model was interpreted using SHAP values metrics to understand which features have higher importance for success. 
+										Lastly, a Flask app was built using the final model after retraining it with the entire dataset.</p>
+									<!-- <h2>Data</h2>
+									<ul>
+										<li>Web-scrapped Kickstarter Data from <a href="https://webrobots.io/kickstarter-datasets/">Web Robots Website</a> (870,114 data points and 38 columns)</li>
+									</ul> -->
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<h2>Tools</h2>
+											<ul>
+												<li>SQL</li>
+												<li>Python (sqlalchemy, Numpy, Pandas)</li>
+												<li>Matplotlib, Seaborn</li>
+												<li>Tableau</li>
+												<li>Scikit-learn</li>
+												<li>Flask</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<h2>Techniques/Algorithms</h2>
+											<h3>Classification Algorithms:</h3>							
+											<ul>
+												<li>K-nearest Neighbor</li>
+												<li>Logistic Regression</li>
+												<li>Decision Tree, Random Forest</li>
+												<li>Naive Bayes - Gaussian, Bernoulli</li>
+												<li>XGBoost</li>
+											</ul>
+											<h3>Metrics Selection:</h3>							
+											<ul>
+												<li><strong>ROC-AUC curve</strong> - for model comparison</li>
+												<li><strong>F1 score</strong> - balance between precision and recall</li>
+													<ul>
+														<li><strong>Minimize False Positives</strong>: creators wouldn’t want the model to predict too many success that will turn out to be a failure </li>
+														<li><strong>Minimize False Negatives</strong>: backers would want to make sure the model capture as many success as possible</li>
+													</ul>
+												<li><strong>Confusion matrix</strong> - show actual prediction results</li>
+											</ul>
+										</div>
+									</div>
+									<h2>Application Usage</h2>
+									<h4>Use Case 1</h4>
+									<iframe src="https://player.vimeo.com/video/549872714?h=9a36bc3d9b" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+									<p><a href="https://vimeo.com/549872714">Flask demo</a> from <a href="https://vimeo.com/user140338294">Crystal Huang</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+									<h4>Use Case 2</h4>
+									<p>If the campaign outcome prediction is bleak, some suggestions based on the feature importance with SHAP values are provided. </p>
+									
+									<h4>To Learn More, Check Out My:</h4>
+									<ul class="actions">
+										<li><a href="https://crystaldatasy.medium.com/ml-classification-model-to-predict-kickstarter-campaign-success-128c8358f0d3" class="button primary">Blog</a></li>
+										<li><a href="https://github.com/crystal-ctrl/classification_project" class="button primary">Code</a></li>
+										<li><span class="button primary disabled">App (Coming Soon)</span></li>
+										<li><span class="button primary disabled">Presentation (Coming Soon)</span></li>
+										
+									</ul>
+
+
+										
+								</section>
+								<section>
+									<div id='contact form' class='inner'>
+										<header class="major">
+											<h2>Let's Talk!</h2>
+										</header>
+										<form action="https://formspree.io/f/mayalepz" method="POST">
+											<label>
+												Your Name:
+												<input type="text" name="name">
+											</label>
+											<label>
+												Your Email:
+												<input type="email" name="_replyto">
+											</label>
+											<label>
+												Your Message:
+												<textarea name="message" placeholder="What's on your mind?"></textarea>
+											</label>
+											<!-- your other form fields go here -->
+											<button type="submit">Send</button>
+										</form>
+										<!-- Footer -->
+										<footer id="footer">
+											<p class="copyright">&copy; Crystal Huang 2021. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+										</footer>
+									</div>
+								</section>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+
+						<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="../index.html">Homepage</a></li>
+									<li><a href="../generic.html">About</a></li>
+									<!-- <li><a href="elements.html">Elements</a></li> -->
+									<li>
+										<span class="opener">Portfolio</span>
+										<ul>
+											<li><a href="project7.html">If You Must Mask</a></li>
+											<li><a href="project6.html">Exploring the Vax Potential</a></li>
+											<li><a href="project5.html">COVIPEDIA</a></li>
+											<li><a href="project4.html">Success Is No Accident</a></li>
+											<li><a href="project3.html">Ratatouille Radar</a></li>
+											<li><a href="project2.html">The Roger-Ebert Bot</a></li>
+											<li><a href="project1.html">MTA Traffic Analysis</a></li>
+										</ul>
+									</li>
+									<li><a href="https://crystaldatasy.medium.com/">Blog</a></li>
+									
+								</ul>
+							</nav>
+
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Get in Touch</h2>
+								</header>
+								<ul class="contact">
+									<li class="icon solid fa-envelope"><a href="#">crystalhuang.ds@gmail.com</a></li>
+									<!-- <li class="icon solid fa-phone"></li> -->
+									<li class="icon solid fa-home">Middletown, RI 02842</li>
+								</ul>
+								<ul class="icons">
+									<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+									<li><a href="https://www.linkedin.com/in/crystal-huang-ds/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/crystal-ctrl" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://crystaldatasy.medium.com/" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+								</ul>
+								
+							</section>
+
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">&copy; Crystal Huang 2021. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							</footer>
+
+					</div>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
